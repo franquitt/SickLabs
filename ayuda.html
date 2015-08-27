@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+<title>SickLabs</title>
+<!-- Bootstrap -->
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/core.css" rel="stylesheet">
+<head>
+	<!--EMPIEZA LA NAVBAR-->    
+    <nav class="navbar navbar-core" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand brand" href="home.php">SickLabs</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navheadings" id="bs-example-navbar-collapse-1">
+      
+       <ul class="nav navbar-nav">
+        
+        <li ><a href="alianza.php">Alianza</a></li>
+        
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acerca De<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="informe.pdf">Informe Base de datos</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+          </ul>
+        </li>  
+      </ul>
+        <div class="navbar-center">
+          <p class="navbar-text">AYUDA</p>
+        </div>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge glyphicon glyphicon-globe">15</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">  
+            <li><a href="#">Mensajes</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Sucesos</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Editar Perfil</a></li>
+            <li><a href="logout.php">Cerrar sesion</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!--TERMINA LA NAVBAR-->
+</head>
+<body>
+    <div class="pnl">
+	<ul class="nav nav-tabs">
+      <li class="active"><a class="mn" data-toggle="tab" href="#home">Bases</a></li>
+      <li><a class="mn" data-toggle="tab" href="#menu1">Navegacion</a></li>
+      <li><a class="mn" data-toggle="tab" href="#menu2">Oro</a></li>
+      <li><a class="mn" data-toggle="tab" href="#menu3">Energia</a></li>
+      <li><a class="mn" data-toggle="tab" href="#menu4">Puntos Geneticos</a></li>
+      <li><a class="mn" data-toggle="tab" href="#menu5">Bonificacion</a></li>
+      <li><a class="mn" data-toggle="tab" href="#menu6">Monstruos</a></li>
+      <li><a class="mn" data-toggle="tab" href="#menu7">Alianza</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <div class="panel-group col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h1>Bases del juego</h1></div>
+                    <div class="panel-body">
+                    <p >SickLabs es un juego en linea, el cual puedes jugar con un navegador web. Todas las ciudades que encuentres están siendo controlada por otro jugador. No hay ninguna controlada por computadora. El juego siempre evoluciona, esto significa que cuando cierras tu navegador la vida en SickLabs sigue. Tus internos siguen generando puntos genéticos y tu oro  y energía continua aumentando gradualmente.</p>
+                    <p >Cuando vuelves al juego después de un tiempo, puedes ver el registro de sucesos que te mostrará todo lo que pasó en tu ausencia.</p>
+                    </div>
+                </div>
+            	<div class="panel panel-info">
+                    <div class="panel-heading"><h4>Mejora de tus monstruos</h4></div>
+                    <div class="panel-body">
+                    <p>Al empezar el juego posees un solo interno que genera puntos genéticos cada cierto tiempo.</p>
+                        <p>Puedes decidir en que área de tu monstruo gastar tus puntos genéticos. Las áreas a escoger son:</p>
+                        <ul>
+                            <li>Velocidad - los ataques de tu monstruo serán más poderosos.</li>
+                            <li>Veneno - al aumentar el poder de veneno de tu monstruo causará mas daño.</li>
+                            <li>Garras - si mejoras las garras de tu monstruo mejorará su daño con ellas.</li>
+                            <li>Escamas - las escamas sirven para defenderte de las garras del rival.</li>
+                            <li>Evasión - la evasión contraresta la velocidad del rival.</li>
+                            <li>Resistencia - la resistencia es la habilidad que tiene tu monstruo para soportar el veneno que puede llegar a recibir en un ataque.</li>
+                            <li>Fuerza - la fuerza potencia el ataque y la defensa de tu monstruo.</li>
+                        </ul>    
+                        <p>También puedes contratar mas internos a cambio de oro y de esta manera generar puntos genéticos con mayor rapidez.</p>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading"><h4>Combate</h4></div>
+                    <div class="panel-body">
+                     <p>El combate es muy importante en SickLabs, es la manera que los científicos demuestran su poderío y suman prestigio.</p>
+                        
+                        <strong>¿Cómo puedo atacar a otro jugador?</strong>
+                        
+                        <p>Si deseas atacar a alguien, clickea una vez sobre su ciudad desde el mapa del mundo. En una ventana emergente podrás elegir desde que ciudad y desde que laboratorio quieres atacar y el coste de energía que conlleva.</p>
+                                
+                        <strong>¿Cómo defiendo mi ciudad?</strong>
+                        
+                        <p>En caso de encontrarte bajo ataque, el monstruo que se encuentre en el laboratorio agredido, lo defenderá automáticamente.</p>
+                        
+                        <strong>¿Puedo perder mis laboratorios?</strong>
+                        
+                        <p>Si. Si no mejoras la defensa de tu monstruo al recibir un ataque de un monstruo con mucho poder de ataque, tu monstruo morirá y el laboratorio desaparecerá automáticamente y el espacio que ocupaba pasará a estar diponible para crear un nuevo laboratorio.</p>
+                        
+                        <strong>¿Que pása si una de mis ciudades pierde todos sus laboratorios?</strong>
+                        
+                        <p>La ciudad será eliminada automáticamente y el espacio que ocupaba pasará a estar disponible para crear una nueva ciudad.</p>
+                        
+                        <strong>¿Que pása si son destruidos todos mis laboratorios y todas mis ciudades?</strong>
+                        
+                        <p>Serás notificado sobre lo sucedido y se te asignará aleatoriamente una nueva ciudad con un laboratorio nuevo. </p>
+                        <p>¡Pero no todo está perdido! Mantendrás la experiencia y el nivel que obtuviste anteriormente.</p>
+                
+                    </div>
+                </div>    
+                <div class="panel panel-info">
+                    <div class="panel-heading"><h4>Ciudades y alianzas</h4></div>
+                    <div class="panel-body">
+                         <p><strong>¿Cómo puedo fundar nuevos laboratorios?</strong></p>
+                
+                        <p>Requieres 10000 unidades de oro para fundar el primer laboratorio, el siguiente costará el doble y asi sucesivamente. Fundar un nuevo laboratorio en la misma ciudad no tendrá costo de energía, pero si quieres fundar un nuevo laboratorio fuera de la ciudad entonces costará 2 puntos de energía por cada coordenada de "X" y cada coordenada de "Y" que tengas de distancia con el lugar donde realizarás la fundación, así que piensa bien a donde fundarás tu próximo laboratorio.</p>
+                        
+                        <p>Comienzas el nuevo laboratorio con la cantidad de recursos inciales de tu primer laboratorio, asi será cada vez que fundes nuevos laboratorios.</p>
+                        
+                        <p>Cuando hayas elegido un espacio libre, sólo haz click sobre él, y aparecerá una ventana emergente donde tienes que ingresar el nombre de tu laboratorio, elegir desde que laboratorio pagarás los costos (se te informará los recursos que necesitas gastar) y listo. ¡Felicidades ya tienes un nuevo laboratorio!.</p>
+                
+                        <strong>¿Cómo creo una alianza?</strong>
+                
+                        <p>Necesitas 30000 unidades de oro para poder crear una alianza. Debes clickear el botón "Alianza" en la barra de navegación. Y luego seleccionar la opción "Crear una Alianza". </p>
+                        <p>Tienes que ingresar como quieres que se llame tu alianza, seleccionar desde que laboratorio pagarás los costos y... !Ya puedes empezar a reclutar nuevos miembros!.</p>
+                    </div>
+                </div>   
+
+                  
+                        
+                <div class="panel panel-info">
+                    <div class="panel-heading"><h4>Invisibilidad</h4></div>
+                    <div class="panel-body">
+                        <p>En el mundo de SickLabs, los jugadores cuentan con una ayuda adicional: la invisibilidad evita que sean objeto de ataques. Cuando esta protección está activa, los laboratorios del jugador que sean menores en 10 puntos genéticos gastados en su monstruo en comparación con otro jugador serán invisibles para éste último.</p>
+                        <p>La función se desactivará cuando el jugador reduzca los puntos genéticos de su laboratorio a 10 o menos con respecto al otro jugador.</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <div class="panel-group col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h1>Navegación</h1></div>
+                    <div class="panel-body">
+                        <p>En SickLabs hay cuatro niveles de representación. Puedes, desde la página de inicio, simplemente pasar de un nivel al otro.</p>
+                
+                        <strong>Mundo</strong>
+                
+                        <p>En el mapa tienes una buena vista general del mundo de SickLabs. Para desplazarte por él, haz click en las flechas al costado del mapa para desplazarte en todas las direcciones. Si colocas el cursor sobre una ciudad, verás toda la información importante sobre ella, como cuántos laboratorios tiene, quién es el dueño y que nivel tiene. Si haces click sobre ella, verás el mapa de la ciudad.</p>
+                
+                        <strong>Ciudad</strong>
+                
+                        <p>El mapa de la ciudad muestra todos los laboratorios presentes en la ciudad y el poblado. Haciendo click en uno de los laboratorios, te llevará al laboratorio.</p>
+                
+                        <strong>Laboratorio</strong>
+                
+                        <p>La vista del laboratorio te permite contemplar la cantidad de recursos que posee tu laboratorio. Desde aquí puedes aumentar los internos.</p>
+                
+                        <p>Cuando cambias al mapa del mundo, se muestra automáticamente aquella ciudad en la que se encuentra el laboratorio que tienes seleccionado en ese momento.</p>
+                
+                        <p>Las ciudades propias y aliadas aparecen con un escudo azul en la vista del mundo. Todas las demás, aparecen con armas en rojo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    <div id="menu2" class="tab-pane fade">
+        <div class="panel-group col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h1>Recursos - Oro</h1></div>
+                <div class="panel-body">
+                    <p>Tu patrimonio en oro está relacionado a cada laboratorio independientemente unos de otros. Cada hora se te sumarán 300 unidades de oro a las arcas de cada laboratorio que poseas.</p> 
+                    
+                    <p>El oro sirve para realizar diversas acciones:</p>
+                    
+                    <ul>
+                        <li>Pagar Drug dealers: -500 unidades de oro.</li>
+                        <li>Contratar internos: -2000 unidades de oro (el siguiente costará el doble).</li>
+                        <li>Fundar un laboratorio: -10000 unidades de oro (el siguiente costará el doble). Si el laboratorio es en una nueva ciudad tendrás que pagar un impuesto de -15000 unidades de oro (el siguiente impuesto costará el doble al fundar otra ciudad).</li>
+                        <li>Fundar una alianza: -30000 unidades de oro.</li>
+                    </ul>
+                    
+                    <strong>¿Cómo consigo oro?</strong>
+                    <ul>
+                        <li>Por cada hora transcurrida se te asignará 300 unidades de oro en cada laboratorio que poseas.</li>
+                        <li>Atacando al poblado de tu ciudad obtendrás como recompensan 750 unidades de oro por cada nivel que tenga el poblado. ¡Recuerda que cada vez que lo ataques subirá de nivel!.</li>
+                        <li>Atacando a otro jugador.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+        
+
+     <div id="menu3" class="tab-pane fade">
+            <div class="panel-group col-md-12">   
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><h1>Recursos - Energía</h1></div>
+                    <div class="panel-body">
+                        <p>La energía encuentra diferentes aplicaciones:</p>
+                
+                        <ul>
+                            <li>Para atacar a otros jugadores: -1 punto de energía por cada coordenada recorrida en X y cada coordenada recorrida en Y.</li>
+                            <li>Para fundar un nuevo laboratorio: -2 puntos de energía por cada coordenada recorrida en X y cada coordenada recorrida en Y en el mundo.</li>
+                        </ul>
+                        
+                        <p>Cuando ataques a otros jugadores se va a hacer una reducción en el costo de la energía con el siguiente criterio:</p>
+                        
+                        <ul>
+                            <li>Si el costo del ataque supera los 100 puntos de energía, se aplicará un descuento de 25 puntos de energía al costo incial.</li>
+                            <li>Si el costo del ataque supera los 200 puntos de energía, se aplicará un descuento de 50 puntos de energía al costo incial.</li>
+                        </ul>
+                
+                        <strong>¿Cómo consigo energía?</strong>
+                        <ul>
+                            <li>Por cada hora transcurrida se te asignará 1 punto de energía en cada laboratorio que poseas.</li>
+                            <li>Por cada Drug Dealer que contrates obtendrás 3 puntos de energía.</li>
+                            <li>Atacando al poblado de tu ciudad obtendrás como recompensan 3 puntos de energía por cada nivel que tenga el poblado. ¡Recuerda que cada vez que lo ataques subirá de nivel!.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="menu4" class="tab-pane fade">
+        <div class="panel-group col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h1>Recursos - Puntos genéticos</h1></div>
+                <div class="panel-body">
+                    <p>Los puntos genéticos sirven para mejorar tus monstruos:</p>
+            
+                    <ul>
+                        <li>Para mejorar por primera vez una característica del monstruo el costo es de 1 punto genético (el siguiente costará el doble).</li>
+                    </ul>
+                    
+                    <p>Las características especiales de cada monstruo tienen una bonificación a comparación de las características normales con el siguiente criterio:</p>
+                    
+                    <ul>
+                        <li>+1 habilidad normal por cada mejora.</li>
+                        <li>+2 habilidad especial por cada mejora.</li>
+                    </ul>
+            
+                    <strong>¿Cómo consigo puntos genéticos?</strong>
+                    
+                    <ul>
+                        <li>Por cada hora recibirás 1 punto genético en cada laboratorio que poseas.</li>
+                        <li>Atacando a otro jugador.</li>
+                    </ul>
+                    <p>Los puntos genéticos sirven para mejorar tus monstruos:</p>
+            
+                    <ul>
+                        <li>Para mejorar por primera vez una característica del monstruo el costo es de 1 punto genético (el siguiente costará el doble).</li>
+                    </ul>
+                    
+                    <p>Las características especiales de cada monstruo tienen una bonificación a comparación de las características normales con el siguiente criterio:</p>
+                    
+                    <ul>
+                        <li>+1 habilidad normal por cada mejora.</li>
+                        <li>+2 habilidad especial por cada mejora.</li>
+                    </ul>
+            
+                    <strong>¿Cómo consigo puntos genéticos?</strong>
+                    
+                    <ul>
+                        <li>Por cada hora recibirás 1 punto genético en cada laboratorio que poseas.</li>
+                        <li>Atacando a otro jugador.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu5" class="tab-pane fade">
+        <div class="panel-group col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h1>Bonificación diaria de SickLabs</h1></div>
+                <div class="panel-body">
+                    <p>A partir del día 1 después de registrarte recibes cada día una bonificación por jugar a diario.</p>
+                    
+                    <p>Esta bonificación diaria está compuesta de una determinada cantidad de oro, energía y puntos genéticos. Tendrás que elegir uno de tus laboratorios donde quieras recibir la recompensa.</p>
+                    
+                    <p>Esta es la recompensa por jugar diariamente en SickLabs:</p>
+                    
+                    <ul>
+                        <li>3000 unidades de oro.</li>
+                        <li>10 puntos de energía.</li>
+                        <li>3 puntos genéticos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu6" class="tab-pane fade">
+        <div class="panel-group col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h1>Monstruos</h1></div>
+                <div class="panel-body">
+                    <p>En Sicklabs existen diferentes tipos de monstruo con sus puntos fuertes y sus carencias. Estos tipos de monstruos son: bestia, bicho, demonio, elemental y salvaje. Se eligen al crear un nuevo laboratorio. Cada tipo tiene estadísticas iniciales diferentes.</p>
+                </div>
+            </div> 
+                
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Tipo bestia</h4></div>
+                <div class="panel-body">
+                    <p>Este monstruo es muy corpulento tiene increíble fuerza y capacidad de aguantar golpes con sus fuertes escamas, además de poseer garras para atacar al rival.</p>
+                    
+                    <p>Estadísticas iniciales:</p>
+
+                    <ul>
+                        <li>+2 fuerza</li>
+                        <li>+2 escamas</li>
+                        <li>+1 garras</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Tipo bicho</h4></div>
+                <div class="panel-body">
+                    <p>Este monstruo venenoso es muy rápido y letal, inyecta un veneno muy potente con el que hiere a los rivales que casi ni lo ven venir debido a su rapidez, lograr golpearlo es aún más complicado debido al alto índice de evasión que posee.</p>
+                    
+                    <p>Estadísticas iniciales:</p>
+
+                    <ul>
+                        <li>+2 veneno</li>
+                        <li>+2 evasión</li>
+                        <li>+1 velocidad</li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Tipo demonio</h4></div>
+                <div class="panel-body">
+                    <p>Este monstruo maligno tiene letales garras con las que rápidamente desgarran y lastiman la piel de su rival, además posee una increíble resistencia al veneno.</p>
+                    
+                    <p>Estadísticas iniciales:</p>
+
+                    <ul>
+                        <li>+2 garras</li>
+                        <li>+2 resistencia</li>
+                        <li>+1 velocidad</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Tipo elemental</h4></div>
+                <div class="panel-body">
+                    <p>Este misterioso monstruo formado de la naturaleza posee la fuerza del viento y la resistencia de los árboles, es muy escurridizo por lo que es complicado lograr asestarle un golpe certero.</p>
+                    
+                    <p>Estadísticas iniciales:</p>
+
+                    <ul>
+                        <li>+2 fuerza</li>
+                        <li>+2 resistencia</li>
+                        <li>+1 evasión</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Tipo salvaje</h4></div>
+                <div class="panel-body">
+                    <p>Este curioso monstruo posee una velocidad sin igual y unas devastadores garras con las que aniquila al rival, además sus escamas lo protegen de las garras de sus enemigos.</p>
+                    
+                    <p>Estadísticas iniciales:</p>
+
+                    <ul>
+                        <li>+2 velocidad</li>
+                        <li>+2 garras</li>
+                        <li>+1 escamas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu7" class="tab-pane fade">
+        <div class="panel-group col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading"> <h1>Alianzas</h1></div>
+                <div class="panel-body">
+                    <p>Una Alianza es un grupo de jugadores que se unen para jugar juntos y apoyarse mutuamente tanto en los aspectos militares. El acceso a una Alianza es una buena posibilidad para conocer a otros jugadores de SickLabs. Además, si formas parte de una Alianza, dispones de facilidades para conmunicarte con ellos, así como de una clasificación para la que reunís puntos de forma conjunta.</p>
+                </div>
+            </div> 
+             <div class="panel panel-info">
+                <div class="panel-heading"><h4>Fundación de una Alianza</h4></div>
+                <div class="panel-body">
+                    <p>Para fundar una Alianza tienes que clickear el botón "Alianza" en la barra de navegación. En ésta sección, selecciona la opción "Crear una Alianza".</p>
+                
+                    <p>Tienes que elegir un nombre para la Alianza. El nombre se muestra en la clasificación de Puntuación y al consultar a que alianza pertenece algún otro jugador.</p>
+                
+                    <p>Por supuesto, necesitas reclutar miembros.</p>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Unirse a una Alianza</h4></div>
+                <div class="panel-body">
+                    <p>Para unirte a una Alianza existente, tienes que contactar con el líder de una alianza y pedirle que te envie la petición de ingreso que después podrás aceptar o rechazar.</p>
+                
+                    <p>En la sección "Alianza", puedes buscar la Alianza que prefieras y contactar con su líder indicando tu deseo de pertenecer a ella.</p>
+                
+                    <p>Ten en cuenta que algunas Alianzas permitirán el acceso a cualquiera que lo solicite, pero otras solo te admitirán algunos requisitos, por ejemplo, un nivel mínimo.</p>
+                
+                    <p>Si no estás seguro de que Alianza elegir, envia la solicitud a alguna Alianza que tenga muchos miembros cerca de tus ciudades. Esto te permitirá una colaboración y una defensa mucho más rápida.</p>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Ventajas de Pertenecer a una Alianza</h4></div>
+                <div class="panel-body">
+                    <p>Pertenecer a una Alianza puede ser muy útil: puedes encontrar fácilmente compañeros y comunicarte con ellos a través de mensajes circulares.</p>
+                
+                    <p>Una Alianza también puede protegerte en caso de ser atacado por otros jugadores. La Alianza permite ver con mayor claridad las ciudades de cualquier miembro. Debido a eso es más facil planear un ataque o una defensa frente a otro grupo de jugadores.</p>
+                </div>
+            </div>
+           
+            <div class="panel panel-info">
+                <div class="panel-heading"><h4>Rangos</h4></div>
+                <div class="panel-body">
+                    <p>Hay tres tipos de rangos en una alianza.</p>
+
+                    <strong>Líderes</strong>
+
+                    <p>Pueden invitar y expulsar jugadores.</p>
+                    <p>Pueden ascender y degradar de rango a los jugadores de la alianza.</p>
+
+                    <strong>Oficiales</strong>
+                    
+                    <p>Puede invitar jugadores a la alianza</p>
+                    
+                    <strong>Miembros</strong>
+                    
+                    <p>Es el rango básico y no posee ninguna función especial</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
